@@ -3,7 +3,8 @@ from things_the_pipeline_will_use.pipeline_options import CustomOptions
 from things_the_pipeline_will_use.pipeline_pardo import WordSplitCustomPardo, DataPrinterCustomPardo
 
 
-def pipeline_builder():
+if __name__ == '__main__':
+    print("YOU ARE RUNNING A BEAUTIFUL PIPELINE, ENJOY ;)")
     # The pipeline will use the custom options that we designed for it, so, we have to specify the pipeline Options on
     # builder of the beam.Pipeline.
     # https://beam.apache.org/documentation/programming-guide/#configuring-pipeline-options
@@ -59,8 +60,3 @@ def pipeline_builder():
         #                  | "replicated" >> word_split_transform
         #                  | "replicate2d" >> data_printer_transform
         #                  | "replicated3" >> sink_transform)
-
-
-if __name__ == '__main__':
-    print("YOU ARE RUNNING A BEAUTIFUL PIPELINE, ENJOY ;)")
-    pipeline_builder()
