@@ -8,11 +8,11 @@ Please, first read the code and try to understand it and once you completed this
 
 1. Clone the repo:
 ```sh
-cd /home/
+git clone https://github.com/PinyaMan/NotSpookyDataflow.git
 ```
 2. Locate your terminal inside the folder 1_pipeline_parts:
 ```sh
-cd /home/
+cd NotSpookyDataflow/Python/src/1_pipeline_parts/
 ```
 3. Create an environent and install the python packages:
 ```sh
