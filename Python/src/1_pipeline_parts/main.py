@@ -28,7 +28,6 @@ def pipeline_builder():
         # ------------------------------------------------------------------------------------------------------------
         # [Output PCollection] = [Input PCollection] | [Transform]
         # ------------------------------------------------------------------------------------------------------------
-
         # https://beam.apache.org/documentation/programming-guide/#applying-transforms
         read_transform_pcollection = pipeline | input_read_transform
 
